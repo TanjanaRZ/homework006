@@ -15,8 +15,8 @@ for (int i = 0; i < m; i++)
 {
     for(int j = 0; j< n; j++)
     {
-        matrix [i, j] = new Random().NextDouble()*100;
-        Console.Write(matrix[i,j]+", ");
+        matrix [i, j] = Math.Round((new Random().NextDouble()-0.5)*200,2);
+        Console.Write(matrix[i,j]+",    ");
     }
 Console.WriteLine();
 }
